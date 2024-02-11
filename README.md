@@ -1,5 +1,5 @@
 
-[](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F0sat4dwnwu051.jpg)
+[s](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F0sat4dwnwu051.jpg)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
