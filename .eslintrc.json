@@ -1,6 +1,48 @@
 {
-  "extends": "next/core-web-vitals",
+  "env": {
+    "jest": true
+  },
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
   "rules": {
-    "no-unused-vars":"error"
-  }
+    "no-unused-vars": "error"
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "ignorePatterns": [
+    "!."
+  ],
+  "globals": {
+    "React": true,
+    "JSX": true
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.test.js"
+      ],
+      "env": {
+        "jest": true
+      }
+    },
+    {
+      "files": [
+        "**/__tests__/**/*.tsx",
+        "**/?(*.)+(spec|test).tsx"
+      ],
+      "extends": [
+        "plugin:testing-library/react"
+      ],
+      "rules": {
+        "testing-library/no-node-access": "off",
+        "testing-library/prefer-screen-queries": "off"
+      }
+    }
+  ]
 }
