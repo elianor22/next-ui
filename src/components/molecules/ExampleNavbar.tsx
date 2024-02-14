@@ -1,3 +1,4 @@
+"use client"
 import {
   Box,
   Button,
@@ -6,24 +7,28 @@ import {
   ListItemButton,
   ListItemText,
   Typography,
+  useMediaQuery,
 } from "@mui/material"
 
 const menu: Array<string> = ["My Project", "About", "Contact"]
 
 const ExampleNavbar = () => {
+  const matches = useMediaQuery("(min-width:600px)")
   return (
     <nav>
       <Box
         width="100%"
         px="1rem"
         py="8px"
-        sx={{
-          boxShadow: "0px -3px 12px #cdcaca",
-        }}
+        sx={
+          {
+            // boxShadow: "0px -3px 12px #cdcaca",
+          }
+        }
       >
         <Box display="flex" justifyContent="space-between" alignItems="center">
-          <Box maxWidth="150px">
-            <Typography>My Logo Is Perfect!.</Typography>
+          <Box width="max-content">
+            <Typography fontWeight={700}>My Logo Is Perfect!.</Typography>
           </Box>
           <Box display="flex">
             <List
@@ -48,18 +53,20 @@ const ExampleNavbar = () => {
               ))}
             </List>
           </Box>
-          <Box>
-            <Button
-              variant="contained"
-              size="small"
-              sx={{
-                borderRadius: "100px",
-                fontWeight: 700,
-              }}
-            >
-              Login
-            </Button>
-          </Box>
+          {matches && (
+            <Box>
+              <Button
+                variant="contained"
+                size="medium"
+                sx={{
+                  borderRadius: "100px",
+                  fontWeight: 700,
+                }}
+              >
+                Login
+              </Button>
+            </Box>
+          )}
         </Box>
       </Box>
     </nav>

@@ -4,8 +4,8 @@
         "eslint src --fix"
     ],
     "*.html": [
-        "prettier --write",
-        "eslint src --fix"
+        "eslint src --fix",
+        "prettier --write"
     ],
     "*.scss": "prettier --write"
 }
