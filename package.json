@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -14,6 +15,7 @@
     "format": "prettier --write -u '*/**/*.{js,jsx,ts,tsx,json,css,md}'"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.29.8",
     "@emotion/cache": "^11.11.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
