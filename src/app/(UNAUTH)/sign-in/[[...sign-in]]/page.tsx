@@ -1,10 +1,10 @@
-import { UserButton } from "@clerk/nextjs"
+import { SignIn,  } from "@clerk/nextjs"
 import { Container } from "@mui/material"
 
 export default function Signin() {
   return (
     <Container>
-      <UserButton afterSignOutUrl="/" />
+      <SignIn afterSignInUrl="/admin" />
     </Container>
   )
 }

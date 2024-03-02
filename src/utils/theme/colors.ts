@@ -9,7 +9,7 @@ type Colors =
 export const colorVariants: Colors = {
   primary: {
     light: "purple",
-    main: "#ff5555",
+    main: "#9F70FD",
     dark: "purple",
     contrastText: "#fff",
   },
@@ -17,8 +17,10 @@ export const colorVariants: Colors = {
     light: "#610C9F",
     dark: "#551655",
   },
-  "background.2": "070F2B",
-  //   background: {
-  //     default: "#f8f3ff",
-  //   },
+  "background.1": "#FDFBFD",
+  "background.2": "#070F2B",
+
+  // background: {
+  //   default: "#fdfbfd",
+  // },
 }
